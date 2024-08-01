@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+body{
+  background-color: #cd5a91;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboard{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list, .form{
+  background-color: #f1f2f4;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px 12px;
+  min-width: 200px;
+  margin: 0;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.list .title{
+  margin: 0px 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-list{
+  background-color: #ffffff3d;
+  min-width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 0px;
+}
+
+.card{
+  background-color: #fff;
+  box-shadow: var( 0px 1px 1px #091e4240, 0px 0px 1px #091e424f);
+  min-height: 24px;
+  border-radius: 8px;
+  padding: 8px 12px 4px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 10px;
+}
+
+.close-list{
+  position: absolute;
+  right: 20px;
 }
